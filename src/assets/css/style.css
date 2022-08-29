@@ -726,7 +726,7 @@
     margin-top: 40px;
 }
 
-.p_card1:first-child{
+.p_card1:first-child {
     margin-top: 0px;
 }
 
@@ -1038,6 +1038,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 /* business profile end */
 
 
@@ -1050,7 +1051,7 @@
     box-shadow: 0px 0px 16px -7px #80808091;
 }
 
-.chat_img{
+.chat_img {
     width: 60px;
     height: 60px;
     object-fit: cover;
@@ -1059,17 +1060,17 @@
     padding: 3px;
 }
 
-.person_main{
+.person_main {
     display: flex;
     gap: 10px;
     margin-top: 15px;
 }
 
-.person_main:nth-of-type(even){
+.person_main:nth-of-type(even) {
     justify-content: flex-end;
 }
 
-.p_msg{
+.p_msg {
     background: var(--color-gold);
     border-radius: 30px;
     padding: 15px;
@@ -1078,17 +1079,17 @@
     font-weight: bold;
 }
 
-.p_msg p{
+.p_msg p {
     margin-bottom: 0px;
 }
 
-.chat_date{
+.chat_date {
     color: #13103e75;
     font-size: 15px;
     text-align: center;
 }
 
-.chat_msg_img{
+.chat_msg_img {
     border-radius: 15px;
     width: 100%;
 }
@@ -1100,7 +1101,7 @@
     margin-top: 25px;
 }
 
-.sm_1{
+.sm_1 {
     border: 1px solid #25284923;
     border-radius: 50%;
     width: 50px;
@@ -1111,14 +1112,14 @@
     cursor: pointer;
 }
 
-.sm_2{
+.sm_2 {
     border: 1px solid #25284923;
     width: 100%;
     border-radius: 25px;
     position: relative;
 }
 
-.sm_3{
+.sm_3 {
     border: 1px solid #25284923;
     width: 100%;
     border-radius: 50%;
@@ -1128,11 +1129,11 @@
     place-items: center;
 }
 
-.w_25{
+.w_25 {
     width: 25px;
 }
 
-.imogi_icon{
+.imogi_icon {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -1140,19 +1141,19 @@
     cursor: pointer;
 }
 
-.chat_input{
+.chat_input {
     color: #252849;
     font-size: 18px;
     font-weight: 600;
 }
 
-.chat_input::placeholder{
+.chat_input::placeholder {
     color: #252849;
     font-size: 18px;
     font-weight: 600;
 }
 
-.chat_p_layout{
+.chat_p_layout {
     grid-template-columns: 350px 1fr !important;
 }
 
@@ -1162,28 +1163,30 @@
 
 
 /* modal code goes here */
-.modal-content{
+.modal-content {
     border-radius: 20px !important;
 }
-.deleteModal{
+
+.deleteModal {
     color: var(--color-grey);
     text-align: center;
     padding: 30px 0px 50px !important;
     background-color: #E9DEA6;
     border-radius: 20px;
 }
+
 /* modal code goes here */
 
 
 /* account seetings area start */
-.change_profile{
+.change_profile {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     position: relative;
 }
 
-.c_input_file{
+.c_input_file {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1191,7 +1194,8 @@
     opacity: 0;
     cursor: pointer;
 }
-.ac_profile_img{
+
+.ac_profile_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1200,15 +1204,16 @@
     background-color: #E9E9EC;
 }
 
-.ac_profile_icon{
+.ac_profile_icon {
     position: absolute;
     right: -10px;
     bottom: -10px;
 }
+
 /* account seetings area end */
 
 /* login area start */
-.login_area{
+.login_area {
     background: url(../images/login_bg.png);
     min-height: 100vh;
     width: 100%;
@@ -1216,15 +1221,204 @@
     place-items: center;
 }
 
-.login_box{
+.login_box {
     width: 400px;
 }
+
 /* login area end */
 
 /* cart area start */
-.main_Line{
-    width: 778;
+.main_Line {
+    width: 778px;
     height: 16px;
-    background-color:#adb0c2;
+    background-color: #adb0c2;
+    margin: 0 auto;
+    position: relative;
 }
+
+.inner_line {
+    width: 33%;
+    background-color: var(--color-gold);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.main_Line .circle {
+    width: 26px;
+    height: 26px;
+    background: #adb0c2;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid#fff;
+    box-shadow: 0px 0px 5px -1px grey;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main_Line .circle1 {
+    left: -13px;
+}
+
+.main_Line .circle2 {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main_Line .circle3 {
+    right: -13px;
+}
+
+.circle_inner {
+    position: relative;
+    top: 40px;
+    left: -25px;
+}
+
+.circle span {
+    font-family: var(--font-roboto);
+    color: var(--color-grey);
+    font-weight: 400;
+}
+
+.active_circle {
+    background: var(--color-gold) !important;
+}
+
+.active_circle span {
+    color: var(--color-gold) !important;
+}
+
+.ov_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ov_card_img {
+    width: 94px;
+    height: 94px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-grey);
+    padding: 3px;
+}
+
+.ov_card_title {
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--color-gold);
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.ov_card_desc {
+    font-size: 22px;
+    color: var(--color-grey);
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.ov_counter_number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.ov_counter_number>span {
+    border-radius: 50%;
+    background-color: #adb0c2;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.rm_text {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+.ov_close_icon {
+    width: 35px;
+    height: 35px;
+    background-color: #ee1b27;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GrFormClose path {
+    stroke: #fff;
+}
+
+.GrFormClose {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.ov_main {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+}
+
+.order_summary_box {
+    border: 1px solid #E4E7EA;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.order_summary_box p {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #343d68;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.mobile_ov_card {
+    display: none;
+}
+
+.ov_terms_text {
+    font-size: 15px !important;
+}
+
+.payment_img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.payment_img div{
+    width: 154px;
+    height: 88px;
+    border-radius: 11px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_img div:hover{
+    border: 1px solid var(--color-gold);
+}
+
+
 /* cart area end */

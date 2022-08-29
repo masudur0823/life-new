@@ -86,10 +86,11 @@
         grid-template-columns: 1fr !important;
     }
 
-    .chat_pl_child1{
+    .chat_pl_child1 {
         order: 2;
     }
-    .chat_pl_child2{
+
+    .chat_pl_child2 {
         order: 1;
     }
 }
@@ -116,7 +117,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .c_card_button{
+    .c_card_button {
         width: 200px;
     }
 }
@@ -270,10 +271,11 @@
         cursor: pointer;
     }
 
-    .c_card{
+    .c_card {
         flex-direction: column;
         align-items: baseline;
     }
+
     .c_card_button {
         display: flex;
         justify-content: space-between;
@@ -385,12 +387,15 @@
         padding: 5px 10px;
         font-size: 15px;
     }
-    .chat_input::placeholder{
+
+    .chat_input::placeholder {
         font-size: 15px;
     }
-    .chat_input{
+
+    .chat_input {
         font-size: 15px;
     }
+
     .send_msg {
         grid-template-columns: 40px 1fr 40px;
         grid-gap: 15px;
@@ -403,27 +408,174 @@
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
+@media only screen and (max-width: 1400px) {
+    .ov_card_img {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid var(--color-grey);
+        padding: 3px;
+    }
+
+    .ov_card_title {
+        font-size: 22px;
+        line-height: initial;
+        color: var(--color-gold);
+        font-weight: 500;
+        font-family: "Roboto";
+    }
+
+    .ov_card_desc {
+        font-size: 18px;
+        color: var(--color-grey);
+        font-weight: 400;
+        font-family: "Roboto";
+    }
+
+    .ov_counter_number {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+    }
+
+    .ov_counter_number>span {
+        border-radius: 50%;
+        background-color: #adb0c2;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .rm_text {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--color-grey);
+    }
+
+    .ov_close_icon {
+        width: 28px;
+        height: 28px;
+        background-color: #ee1b27;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .GrFormClose path {
+        stroke: #fff;
+    }
+
+    .GrFormClose {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+    .ov_main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main_Line {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
-    .profile_card{
+    .profile_card {
         flex-direction: column;
         gap: 20px;
+    }
+    .ov_card {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .mobile_ov_card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ov_card{
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .profile_part{
+    .profile_part {
         flex-direction: column;
         gap: 20px;
     }
 
-    .login_box{
+    .login_box {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .login_area{
+    .login_area {
         padding: 0px 15px;
     }
 
+    .circle span {
+        font-size: 12px;
+    }
+
+    .order_summary_box p {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #343d68;
+        font-weight: 400;
+        font-family: "Roboto";
+    }
+
+    .title_two{
+        font-size: 22px;
+    }
+
+
 }
 
+@media only screen and (max-width: 375px) {
+    .ov_card_title {
+        font-size: 18px;
+    }
+    .ov_card_desc{
+        font-size: 14px;
+    }
+    .rm_text{
+        font-size: 14px;
+    }
+
+    .ov_counter_number>span {
+        border-radius: 50%;
+        background-color: #adb0c2;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .mobile_ov_card {
+        padding: 9px;
+    }
+}

@@ -165,6 +165,16 @@ a {
   text-transform: capitalize;
 }
 
+.title_two {
+  font-family: var(--font-openSans);
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 12px;
+  margin-bottom: 0px;
+  color: var(--color-grey);
+  text-transform: capitalize;
+}
+
 /* common title end */
 
 /* common pargraph */
