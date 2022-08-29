@@ -1220,3 +1220,11 @@
     width: 400px;
 }
 /* login area end */
+
+/* cart area start */
+.main_Line{
+    width: 778;
+    height: 16px;
+    background-color:#adb0c2;
+}
+/* cart area end */
