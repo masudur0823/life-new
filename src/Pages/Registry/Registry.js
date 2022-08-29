@@ -5,7 +5,6 @@ import plusIcon from '../../assets/images/icons/plusIcon.svg'
 import { AiFillLock } from 'react-icons/ai';
 import img from '../../assets/images/p_cradimg.png'
 import { Col, Row } from 'react-bootstrap';
-import filterIcon from '../../assets/images/icons/filter.svg'
 
 function Registry() {
     useEffect(() => {
@@ -38,46 +37,9 @@ function Registry() {
                         </div>
                     </div>
                     <div className='pl_child2'>
-                        <div className='r_select_area'>
-                            <div className='r_select_area_child1'>
-                                <div className='desktop-none-950'>
-                                    <div className='filter_main'>
-                                        <img src={filterIcon} alt="" />
-                                        <span className='para1 ms-2'><b>Filter</b></span>
-                                    </div>
-                                </div>
-                                <p className='para1 rsa_text'>232 results near you</p>
-                            </div>
-                            <div className='r_select_area_inner'>
-                                <select name="" id="" className='input_field select'>
-                                    <option value="">Category: All</option>
-                                    <option value="">Category: All</option>
-                                    <option value="">Category: All</option>
-                                    <option value="">Category: All</option>
-                                </select>
-                                <select name="" id="" className='input_field select ms-2'>
-                                    <option value="">List by: Relevance</option>
-                                    <option value="">List by: Relevance</option>
-                                    <option value="">List by: Relevance</option>
-                                    <option value="">List by: Relevance</option>
-                                </select>
-                                <select name="" id="" className='input_field select ms-2'>
-                                    <option value="">Price: +50</option>
-                                    <option value="">Price: +50</option>
-                                    <option value="">Price: +50</option>
-                                    <option value="">Price: +50</option>
-                                </select>
-                                <select name="" id="" className='input_field select ms-2'>
-                                    <option value="">Rates: +5</option>
-                                    <option value="">Rates: +5</option>
-                                    <option value="">Rates: +5</option>
-                                    <option value="">Rates: +5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className='py-4'>
+                        <div className='pb-4'>
                             {/* card start */}
-                            <div className='p_card mt-4 r_pcard'>
+                            <div className='p_card r_pcard'>
                                 <div className='p_card_child1 pc_child'>
                                     <img src={img} className="p_c_img" alt="" />
                                     <div className='price_continer phn-price_continer'>
@@ -301,8 +263,8 @@ function Registry() {
                                 </div>
                             </div>
                             {/* card end */}
-                            <div className='mt-4 text-center'>
-                                <button className='button1'>see more</button>
+                            <div className='mt-4 text-center text-md-end'>
+                                <button className='button2'>add service</button>
                             </div>
                         </div>
                     </div>

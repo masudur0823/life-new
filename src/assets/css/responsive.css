@@ -398,3 +398,32 @@
 }
 
 /* responsive end */
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+@media only screen and (max-width: 767px) {
+    .profile_card{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile_part{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .login_box{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .login_area{
+        padding: 0px 15px;
+    }
+
+}
+

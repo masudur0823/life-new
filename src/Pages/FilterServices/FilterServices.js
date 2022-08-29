@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import filterIcon from "../../assets/images/icons/filter.svg";
 import serachIcon from "../../assets/images/icons/search.svg";
 
-function Services() {
+function FilterServices() {
   return (
     <div className="img_overlay">
       <LoginHeader />
@@ -113,28 +113,8 @@ function Services() {
               </div>
               <div className="r_select_area_inner">
                 <select name="" id="" className="input_field select">
-                  <option value="">Category: All</option>
-                  <option value="">Category: All</option>
-                  <option value="">Category: All</option>
-                  <option value="">Category: All</option>
-                </select>
-                <select name="" id="" className="input_field select ms-2">
-                  <option value="">List by: Relevance</option>
-                  <option value="">List by: Relevance</option>
-                  <option value="">List by: Relevance</option>
-                  <option value="">List by: Relevance</option>
-                </select>
-                <select name="" id="" className="input_field select ms-2">
-                  <option value="">Price: +50</option>
-                  <option value="">Price: +50</option>
-                  <option value="">Price: +50</option>
-                  <option value="">Price: +50</option>
-                </select>
-                <select name="" id="" className="input_field select ms-2">
-                  <option value="">Rates: +5</option>
-                  <option value="">Rates: +5</option>
-                  <option value="">Rates: +5</option>
-                  <option value="">Rates: +5</option>
+                  <option value="">Status: Online Now</option>
+                  <option value="">Status: Online Now</option>
                 </select>
               </div>
             </div>
@@ -150,7 +130,7 @@ function Services() {
                 </div>
                 <div className="p_card_child2 pc_child">
                   <div>
-                    <h4 className="pc_title">Registry Service title</h4>
+                    <h4 className="pc_title">Service title Name</h4>
                     <p className="star_text">
                       5.0 <span className="p_para1">(34 ratings)</span>
                     </p>
@@ -203,7 +183,7 @@ function Services() {
                 </div>
                 <div className="p_card_child2 pc_child">
                   <div>
-                    <h4 className="pc_title">Registry Service title</h4>
+                    <h4 className="pc_title">Service title Name</h4>
                     <p className="star_text">
                       5.0 <span className="p_para1">(34 ratings)</span>
                     </p>
@@ -256,7 +236,7 @@ function Services() {
                 </div>
                 <div className="p_card_child2 pc_child">
                   <div>
-                    <h4 className="pc_title">Registry Service title</h4>
+                    <h4 className="pc_title">Service title Name</h4>
                     <p className="star_text">
                       5.0 <span className="p_para1">(34 ratings)</span>
                     </p>
@@ -309,7 +289,7 @@ function Services() {
                 </div>
                 <div className="p_card_child2 pc_child">
                   <div>
-                    <h4 className="pc_title">Registry Service title</h4>
+                    <h4 className="pc_title">Service title Name</h4>
                     <p className="star_text">
                       5.0 <span className="p_para1">(34 ratings)</span>
                     </p>
@@ -362,7 +342,7 @@ function Services() {
                 </div>
                 <div className="p_card_child2 pc_child">
                   <div>
-                    <h4 className="pc_title">Registry Service title</h4>
+                    <h4 className="pc_title">Service title Name</h4>
                     <p className="star_text">
                       5.0 <span className="p_para1">(34 ratings)</span>
                     </p>
@@ -415,4 +395,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default FilterServices;

@@ -151,10 +151,11 @@ a {
   background: #22B6B6;
   color: #fff;
 }
+
 /* common button */
 
 /* common title start */
-.title_one{
+.title_one {
   font-family: var(--font-openSans);
   font-size: 40px;
   font-weight: 600;
@@ -163,6 +164,7 @@ a {
   color: var(--color-grey);
   text-transform: capitalize;
 }
+
 /* common title end */
 
 /* common pargraph */
@@ -196,14 +198,14 @@ a {
   color: #252849;
 }
 
-.serachIcon{
+.serachIcon {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.input_search::placeholder{
+.input_search::placeholder {
   color: #252849;
   font-size: 15px;
 }
@@ -243,6 +245,13 @@ a {
 
 /* common input end */
 
-.cursor_pointer{
+.cursor_pointer {
   cursor: pointer;
+}
+
+.bg_layout1 {
+  border: 1px solid #E4E7EA;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
 }
