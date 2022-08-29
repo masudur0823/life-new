@@ -11,11 +11,11 @@ function Cart() {
       <LoginHeader />
       <Checkout />
       <div className="p-5"></div>
-      <div className="d-none">
+      <div className="d-block">
         <Overview />
       </div>
 
-      <div className="d-block">
+      <div className="d-none">
         <Payment />
       </div>
 
