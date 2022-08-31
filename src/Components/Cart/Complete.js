@@ -6,8 +6,8 @@ function Complete() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="container py-5 text-center">
-      <img src={img} alt="" />
+    <div className="container pb-5 text-center">
+      <img src={img} className="verify_img" alt="" />
       <h1 className='title_one my-3'>Thank you for your order</h1>
       <p className='para1 my-3'>
         An email was sent to your email with all details about your order: services, receipt and time.

@@ -551,6 +551,18 @@
         width: 100%;
     }
 
+    .payment_img div {
+        width: 90px;
+        height: 55px;
+    }
+
+    .payment_img img{
+        width: 50px;
+    }
+    .verify_img{
+        width: 100px;
+    }
+
 
 }
 
