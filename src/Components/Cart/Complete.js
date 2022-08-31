@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from '../../assets/images/verify-1.png'
 
 function Complete() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container py-5 text-center">
       <img src={img} alt="" />

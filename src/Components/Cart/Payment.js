@@ -1,19 +1,23 @@
 import React from "react";
-import img1 from '../../assets/images/payment_icon/payoneer.png'
-import img2 from '../../assets/images/payment_icon/vias.png'
-import img3 from '../../assets/images/payment_icon/paypal.png'
-import img4 from '../../assets/images/payment_icon/Single_Euro_Payments_Area_logo.png'
-import img5 from '../../assets/images/payment_icon/Klarna_Logo_black.png'
-import img6 from '../../assets/images/payment_icon/giro.png'
+import img1 from "../../assets/images/payment_icon/payoneer.png";
+import img2 from "../../assets/images/payment_icon/vias.png";
+import img3 from "../../assets/images/payment_icon/paypal.png";
+import img4 from "../../assets/images/payment_icon/Single_Euro_Payments_Area_logo.png";
+import img5 from "../../assets/images/payment_icon/Klarna_Logo_black.png";
+import img6 from "../../assets/images/payment_icon/giro.png";
+import { useEffect } from "react";
 
 function Payment(props) {
-  const handleNext =() =>{
-    props.setPage((c)=>c+1)
-  }
+  const handleNext = () => {
+    props.setPage((c) => c + 1);
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container mb-5">
-
         <div className="payment_img">
           <div>
             <img src={img1} alt="" />
@@ -38,16 +42,28 @@ function Payment(props) {
         <div className="payment_width">
           <div className="row g-4 mt-3 mt-md-5">
             <div className="col-md-6">
-              <input type="text" className="input_field w-100" placeholder="Card Name" />
+              <input
+                type="text"
+                className="input_field w-100"
+                placeholder="Card Name"
+              />
             </div>
             <div className="col-md-6">
-              <input type="text" className="input_field w-100" placeholder="Billing Address" />
+              <input
+                type="text"
+                className="input_field w-100"
+                placeholder="Billing Address"
+              />
             </div>
             <div className="col-md-6">
-              <input type="text" className="input_field w-100" placeholder="Card Number" />
+              <input
+                type="text"
+                className="input_field w-100"
+                placeholder="Card Number"
+              />
             </div>
             <div className="col-md-6">
-              <div className="row">
+              <div className="row g-4">
                 <div className="col-sm-6">
                   <select name="" id="" className="input_field w-100">
                     <option value="">City:</option>
@@ -61,13 +77,21 @@ function Payment(props) {
               </div>
             </div>
             <div className="col-md-6">
-              <input type="text" className="input_field w-100" placeholder="Security Code" />
+              <input
+                type="text"
+                className="input_field w-100"
+                placeholder="Security Code"
+              />
             </div>
             <div className="col-md-6">
-              <input type="text" className="input_field w-100" placeholder="Zip Code" />
+              <input
+                type="text"
+                className="input_field w-100"
+                placeholder="Zip Code"
+              />
             </div>
             <div className="col-md-6">
-              <div className="row">
+              <div className="row g-4">
                 <div className="col-sm-6">
                   <select name="" id="" className="input_field w-100">
                     <option value="">City:</option>
@@ -81,11 +105,12 @@ function Payment(props) {
               </div>
             </div>
             <div className="col-md-6">
-              <button className="button2 w-100" onClick={handleNext}>buy now</button>
+              <button className="button2 w-100" onClick={handleNext}>
+                buy now
+              </button>
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
