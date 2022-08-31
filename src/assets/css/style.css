@@ -1243,6 +1243,7 @@
     top: 0;
     left: 0;
     height: 100%;
+    transition: all 0.5s linear;
 }
 
 .main_Line .circle {
