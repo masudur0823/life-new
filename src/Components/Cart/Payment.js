@@ -6,7 +6,10 @@ import img4 from '../../assets/images/payment_icon/Single_Euro_Payments_Area_log
 import img5 from '../../assets/images/payment_icon/Klarna_Logo_black.png'
 import img6 from '../../assets/images/payment_icon/giro.png'
 
-function Payment() {
+function Payment(props) {
+  const handleNext =() =>{
+    props.setPage((c)=>c+1)
+  }
   return (
     <>
       <div className="container mb-5">
@@ -78,7 +81,7 @@ function Payment() {
               </div>
             </div>
             <div className="col-md-6">
-              <button className="button2 w-100">buy now</button>
+              <button className="button2 w-100" onClick={handleNext}>buy now</button>
             </div>
           </div>
         </div>

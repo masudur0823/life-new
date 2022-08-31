@@ -65,7 +65,10 @@ const Cart = () => {
   );
 };
 
-function Overview() {
+function Overview(props) {
+  const handleNext =() =>{
+    props.setPage((c)=>c+1)
+  }
   return (
     <div className="container">
       <div className="ov_main mb-4">
@@ -118,7 +121,7 @@ function Overview() {
               <p className="fw-bold">$201</p>
             </div>
 
-            <button className="button2 w-100">proceed to payment</button>
+            <button className="button2 w-100" onClick={handleNext}>proceed to payment</button>
             <p className="ov_terms_text text-center mt-3">
               By clicking in "Proceed to Checkout" you <br className="d-none d-sm-block" /> agree with the
               <a href="#!" className="fw-bold text_gold">Terms & Conditions</a>
