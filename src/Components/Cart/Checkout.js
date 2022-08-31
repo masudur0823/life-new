@@ -20,7 +20,6 @@ function Checkout(props) {
     
   return (
     <div className="text-center">
-      {props.page}
       <h1 className="mb-4 title_one">Checkout</h1>
       <div className="main_Line">
         <div className="inner_line" style={{width:percentage}}></div>
