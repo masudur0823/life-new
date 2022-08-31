@@ -4,6 +4,7 @@ import { useState } from "react";
 function Checkout(props) {
   const [percentage, setPercentage] = useState('0%');
   const [activeCircle, setActiveCircle] = useState('');
+  const [activeCircle2, setActiveCircle2] = useState('');
   const page = props.page;
 
     useEffect(() => {
@@ -14,7 +15,7 @@ function Checkout(props) {
         setActiveCircle('active_circle')
       }else{
         setPercentage('100%')
-        setActiveCircle('active_circle')
+        setActiveCircle2('active_circle')
       }
     }, [page])
     
@@ -29,7 +30,7 @@ function Checkout(props) {
         <div className={`circle circle2 ${activeCircle}`}>
           <span className="circle_inner">Payment</span>
         </div>
-        <div className={`circle circle3 ${activeCircle}`}>
+        <div className={`circle circle3 ${activeCircle2}`}>
           <span className="circle_inner">Completed</span>
         </div>
       </div>
